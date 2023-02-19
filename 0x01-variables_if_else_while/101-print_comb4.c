@@ -5,22 +5,20 @@
   */
 int main(void)
 {
-	int n1, n2, n3, n4, n5;
+	int n1, n2, n3;
 
-	n1 = 0, n2 = 0, n3 = 1;
+	n1 = 0;
 	while (n1 < 8)
 	{
-		n2++;
-		n4 = n2;
-		while (n4 < 9)
+		n2 = n1 + 1;
+		while (n2 < 9)
 		{
-			n3++;
-			n5 = n3;
-			while (n5 <= 9)
+			n3 = n2 + 1;
+			while (n3 <= 9)
 			{
 				putchar(n1 + '0');
-				putchar(n4 + '0');
-				putchar(n5 + '0');
+				putchar(n2 + '0');
+				putchar(n3 + '0');
 				if (n1 == 7)
 					putchar('\n');
 				else
@@ -28,11 +26,11 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				n5++;
+				n3++;
 			}
-			n4++;
+			n2++;
 		}
-		n1 = n1 + 1;
+		n1++;
 	}
 	return (0);
 }
