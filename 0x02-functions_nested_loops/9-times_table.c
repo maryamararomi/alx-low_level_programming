@@ -12,7 +12,7 @@ void times_table(void)
 		_putchar('0');
 		_putchar(',');
 		_putchar(' ');
-		for (j = i; j < 10; j++)
+		for (j = 1; j < 10; j++)
 		{
 			mult = i * j;
 			if ((mult / 10) == 0)
