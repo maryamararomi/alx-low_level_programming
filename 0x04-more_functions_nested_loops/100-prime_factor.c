@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
-  * main - print prime factors of 612852475143
-  * Return: Always 0
+  * main - prints prime factors of 612852475143
+  * Return: Always 0 (Success)
   */
 int main(void)
 {
